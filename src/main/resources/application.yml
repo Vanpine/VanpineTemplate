@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-circular-references: true
+  datasource:
+    driver-class-name: ${vanpine.datasource.driver-class-name}
+    url: jdbc:mysql://${vanpine.datasource.host}:${vanpine.datasource.port}/${vanpine.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${vanpine.datasource.username}
+    password: ${vanpine.datasource.password}
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
