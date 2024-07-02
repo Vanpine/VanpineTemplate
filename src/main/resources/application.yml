@@ -11,7 +11,14 @@ spring:
     url: jdbc:mysql://${vanpine.datasource.host}:${vanpine.datasource.port}/${vanpine.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
     username: ${vanpine.datasource.username}
     password: ${vanpine.datasource.password}
+  data:
+    redis:
+      host: ${vanpine.datasource.redisHost}
+      port: ${vanpine.datasource.redisPort}
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
+
+
+
 
