@@ -6,5 +6,5 @@ vanpine:
     database: vanpine
     username: root
     password: wangbing201708
-    redisHost: 192.168.61.135
+    redisHost: localhost
     redisPort: 6379
